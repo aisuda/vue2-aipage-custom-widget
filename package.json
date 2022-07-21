@@ -97,7 +97,7 @@
     "url": "https://github.com/aisuda/aipage-custom-widget-template/issues"
   },
   "dependencies": {
-    "aipage-widget": "^1.0.1",
+    "aipage-widget": "^1.0.2",
     "react": "^16.8.6",
     "vue": "^2.6.14"
   },
