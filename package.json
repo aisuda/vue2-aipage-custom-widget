@@ -1,7 +1,7 @@
 {
   "name": "aipage-custom-widget-template",
   "version": "1.0.0",
-  "description": "aipage-editor H5自定义组件模板（多个自定义组件）",
+  "description": "aipage-editor H5自定义组件模板（vue2、react）",
   "keywords": [
     "自定义组件模板",
     "aipage-editor自定义组件"
@@ -42,25 +42,8 @@
       }
     },
     {
-      "name": "hello-jquery",
-      "framework": "jquery",
-      "usage": "renderer",
-      "type": "hello-jquery",
-      "entry": "/dist/helloJquery.umd",
-      "files": [],
-      "editorPlugin": {
-        "name": "hello-jquery-plugin",
-        "description": "自定义组件hello-jquery",
-        "pluginEntry": "/dist/helloJqueryPlugin.umd",
-        "tag": [
-          "表单项"
-        ],
-        "sort": 100
-      }
-    },
-    {
       "name": "vue-info-card",
-      "framework": "vue",
+      "framework": "vue2",
       "usage": "renderer",
       "type": "vue-info-card",
       "entry": "/dist/infoCard.umd",
