@@ -44,14 +44,13 @@ $ npm run linkDebug
 $ npm run build2lib
 ```
 6. **package.json添加自定义组件信息，导入组件扩展包时需要**
-> package.json 中添加 amis-widgets 字段，用于放置当前自定义组件信息，有这个amis-widgets 字段才能被识别为自定义组件扩展包。
+> package.json 中添加 aipage-widgets 字段，用于放置当前自定义组件信息，有这个aipage-widgets 字段才能被识别为自定义组件扩展包。
 ```bash
   ...
-    "amis-widgets": [
+    "aipage-widgets": [
     {
       "name": "vue-info-card", // 自定义组件名称，必填项
-      "framework": "vue", // 技术栈类型，非必填项，默认为 react 技术栈
-      "usage": "renderer", // 渲染器类型，非必填项，默认为 renderer
+      "framework": "vue2", // 技术栈类型，非必填项，默认为 react 技术栈
       "type": "vue-info-card", // 自定义组件类型，必填项，同一应用下不允许有重复的自定义组件类型
       "entry": "/dist/infoCard.umd", // 自定义组件入口文件路径，必填项
       "files": [  // 自定义组件依赖资源文件路径，非必填项
@@ -62,7 +61,7 @@ $ npm run build2lib
         "description": "信息展示卡片", // 自定义插件描述，在编辑器左侧组件面板作为描述信息展示，必填项
         "pluginEntry": "/dist/infoCardPlugin.umd", // 自定义插件的入口文件，必填项
         "tag": [  // 自定义插件的分类，必填项
-          "展示"
+          "自定义组件"
         ],
         "sort": 100 // 自定义插件的排序，非必填项
       }
