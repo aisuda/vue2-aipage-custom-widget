@@ -11,7 +11,6 @@
   "scripts": {
     "preview": "amis preview",
     "linkDebug": "amis linkDebug",
-    "build": "amis build",
     "build2lib": "amis build2lib",
     "format": "prettier --write \"src/**/**/*.{js,jsx,ts,tsx,vue,scss,json}\""
   },
@@ -21,39 +20,37 @@
   "framework": "mulStack",
   "aipage-widgets": [
     {
-      "name": "react-info-card",
-      "framework": "react",
       "type": "react-info-card",
+      "framework": "react",
+      "description": "react版信息展示卡片",
       "entry": "/dist/reactInfoCard.umd",
       "files": [
         "/dist/reactInfoCard.css"
       ],
       "editorPlugin": {
-        "name": "react-info-card-plugin",
-        "description": "信息展示卡片",
         "pluginEntry": "/dist/reactInfoCardPlugin.umd",
         "tag": [
           "自定义组件"
         ],
-        "sort": 100
+        "sort": 100,
+        "device": ["mobile", "pc"]
       }
     },
     {
-      "name": "vue-info-card",
-      "framework": "vue2",
       "type": "vue-info-card",
+      "description": "vue2.0版信息展示卡片",
+      "framework": "vue2",
       "entry": "/dist/infoCard.umd",
       "files": [
         "/dist/infoCard.css"
       ],
       "editorPlugin": {
-        "name": "vue-info-card-plugin",
-        "description": "自定义组件vue-text",
         "pluginEntry": "/dist/infoCardPlugin.umd",
         "tag": [
           "自定义组件"
         ],
-        "sort": 100
+        "sort": 100,
+        "device": ["mobile", "pc"]
       }
     }
   ],
