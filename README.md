@@ -1,4 +1,4 @@
-# aipage-custom-widget-template
+# vue2-aipage-custom-widget
 > aipage-editor H5自定义组件模板（vue2、react）
 
 ### 目录说明
